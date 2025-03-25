@@ -16,9 +16,9 @@ export default function Top() {
                 <button className="bg-[#00000099] text-white rounded-md px-3 py-1 text-xs">Update Cover</button>
             </div>
 
-            <div className="flex absolute bottom-[-60px] gap-5">
+            <div className="flex absolute bottom-[-35px] sm:bottom-[-60px] gap-5 left-3 sm:left-auto">
                 <div className='relative'>
-                    <Image src={box} alt='profile-pic' className='w-44 h-44' />
+                    <Image src={box} alt='profile-pic' className='w-28 h-28 rounded-full sm:rounded-none sm:w-44 sm:h-44' />
                 </div>
                 <div className="font-semibold mt-4">
                     <p className="">Temiloluwa, 27</p>
@@ -28,13 +28,13 @@ export default function Top() {
                 <i className="mt-4 text-zinc-700"><FaRegEdit /></i>
             </div>
         </div>
-        <div className="flex items-center gap-3 justify-end py-3 px-2 text-xs">
+        <div className="flex items-center gap-1 sm:gap-3 justify-end py-3 px-1 sm:px-2 text-xs">
             <button className="bg-[#EF2424] text-white p-2 rounded-[50px]">Edit Profile</button>
             <button className="bg-[#EF2424] text-white p-2 rounded-[50px]">Edit Match Setup</button>
         </div>
 
         <div className="relative w-fit mt-8">
-            <textarea name="" placeholder={`A few words about myself`} id="" className="resize-none w-[486px] h-20 border border-[#D9D9D9] outline-none rounded-md px-8 py-3.5"></textarea>
+            <textarea name="" placeholder={`A few words about myself`} id="" className="resize-none w-full max-w-[486px] h-20 border border-[#D9D9D9] outline-none rounded-md px-8 py-3.5"></textarea>
             {<MdOutlineEdit className='absolute top-[16px] left-56' />}
         </div>
     </section>

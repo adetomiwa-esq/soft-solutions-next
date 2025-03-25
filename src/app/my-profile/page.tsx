@@ -10,7 +10,7 @@ export default function page() {
 
         <div className="flex">
             <Aside />
-            <div className="w-[calc(100%-100px)] pt-20 pr-20 pb-6">
+            <div className="w-[calc(100%-50px)] sm:w-[calc(100%-100px)] pt-20 pr-2 md:pr-20 pb-6">
                 <Top />
                 <PersonalInfo />
             </div>

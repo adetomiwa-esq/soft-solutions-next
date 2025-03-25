@@ -20,8 +20,8 @@ export default function Aside() {
   //   setDisplayNav(false)
   // })
   return (
-    <aside className="w-[100px] pl-12 pt-10">
-        <i className="cursor-pointer fixed left-12 top-28" onClick={() => {
+    <aside className="w-[50px] sm:w-[100px] pl-12 pt-10">
+        <i className="cursor-pointer fixed left-5 sm:left-12 top-28" onClick={() => {
           setDisplayNav(true)
         }}><FaBars /></i>
 
