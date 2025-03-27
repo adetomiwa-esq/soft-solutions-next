@@ -9,7 +9,7 @@ export default function Home() {
       <Navbar />
       <div className="flex">
         <Aside />
-        <main className="w-[calc(100%-100px)] pt-10">
+        <main className="w-[calc(100%-50px)] sm:w-[calc(100%-100px)] pt-10">
           <Top />
           <Cards />
         </main>
