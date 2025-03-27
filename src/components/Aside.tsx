@@ -8,6 +8,11 @@ import { LuCircleUserRound } from "react-icons/lu";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
+import { IoMdLogOut } from "react-icons/io";
+import { IoSettingsOutline } from "react-icons/io5";
+import { BsFileEarmarkTextFill, BsHeart } from "react-icons/bs";
+import { RiHeartsLine } from "react-icons/ri";
+import { LiaUserFriendsSolid } from "react-icons/lia";
 
 export default function Aside() {
 
@@ -33,15 +38,15 @@ export default function Aside() {
             <p className="text-center font-semibold mt-4">Temiloluwa</p>
           </div>
 
-          <ul className="flex flex-col gap-2 w-[177px]">
+          <ul className="flex flex-col gap-2 w-[177px] h-[calc(100vh-71px)]">
             <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center ${pathname === "/" ? 'bg-[#EF2424] text-white' : ''}`}><i><TbGridDots /></i> Dashboard</Link></li>
             <li className="w-full"><Link href="/my-profile" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center ${pathname === "/my-profile" ? 'bg-[#EF2424] text-white' : ''}`}><i><LuCircleUserRound /></i> <span>My Profile</span></Link></li>
-            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i></i> <span>Favorites</span></Link></li>
-            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i></i> <span>My Mutuals</span></Link></li>
-            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i></i> <span>My Subscribed</span></Link></li>
-            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i></i> <span>Interested in me</span></Link></li>
-            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i></i> <span>Settings</span></Link></li>
-            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i></i> <span>Logout</span></Link></li>
+            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i><BsHeart /></i> <span>Favorites</span></Link></li>
+            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i><LiaUserFriendsSolid /></i> <span>My Mutuals</span></Link></li>
+            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i><BsFileEarmarkTextFill /></i> <span>My Subscribed</span></Link></li>
+            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i><RiHeartsLine /></i> <span>Interested in me</span></Link></li>
+            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i><IoSettingsOutline /></i> <span>Settings</span></Link></li>
+            <li className="w-full"><Link href="/" className={`hover:bg-[#EF2424] hover:text-white flex gap-3 h-9 rounded-md pl-4 items-center`}><i><IoMdLogOut /></i> <span>Logout</span></Link></li>
           </ul>
         </div>
     </aside>
